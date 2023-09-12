@@ -1,5 +1,15 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js"
+  "/404": "pages/404.html",
+  "/": "pages/index.html",
+  "/works": "pages/works.html",
+  "/works/ana": "pages/works/ana.html",
+  "/works/calas-tech": "pages/works/calas-tech.html",
+  "/works/ecomerce": "pages/works/ecomerce.html",
+  "/works/movie1": "pages/works/movie1.html",
+  "/works/player-music": "pages/works/player-music.html",
+  "/works/batcaverna": "pages/works/batcaverna.html",
+  "/works/coffe": "pages/works/coffe.html"
 }
