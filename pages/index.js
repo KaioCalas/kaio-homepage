@@ -18,7 +18,8 @@ import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
 	FaInstagram,
-	FaGithubAlt
+	FaGithubAlt,
+	FaLinkedin
 } from 'react-icons/fa'
 
 const Page = () => {
@@ -34,7 +35,7 @@ const Page = () => {
 				<Heading as="h2" variant="page-title">
 					Kaio Calás
 				</Heading>
-					<p>Landing Page Designer ( HTML / CSS / JavaScript )</p>
+					<p>Front-end Developer ( HTML / CSS / JavaScript)</p>
 			</Box>
 			<Box flexShrink={0} 
 			mt={{base: 4, md: 0}}
@@ -57,7 +58,7 @@ const Page = () => {
 			<Heading as="h3" variant="section-title">
 				Work
 			</Heading>
-			<Paragraph>Kaio is a young web developer based in Brazil with a huge passion for developing Landing Pages to help sell other people&apos;s products and solve real problems. When not online, he loves listening to music, reading books and playing video games.
+			<Paragraph>Kaio is a young man who lives in Brazil with a great passion for web development. He is always trying to learn new skills and put into practice what he has learned. When he&apos;s not online, Kaio enjoys going to the gym, reading fantasy books, and watching movies.
 				</Paragraph>
 				<Box align="center" my={4}>
 					<NextLink href="/works">
@@ -80,18 +81,13 @@ const Page = () => {
 					Completed Computer technician course in the Technical school Grau Técnico.
 				</BioSection>
 				<BioSection>
-					<BioYear>2021 to present</BioYear>
+					<BioYear>2023 to present</BioYear>
 					Currently studying Web Development on the Udemy Plataform.
 				</BioSection>
 				<BioSection>
-					<BioYear>2021 to present</BioYear>
-					Currently studying Python on the Udemy Plataform.
+					<BioYear>2023 to present</BioYear>
+					Currently working as an Office Assistant at the Real Hospital Português.
 				</BioSection>
-				<BioSection>
-					<BioYear>2022 to present</BioYear>
-					Works as a freelance
-				</BioSection>
-
 			</Section>
 
 			<Section delay={0.3}>
@@ -99,7 +95,7 @@ const Page = () => {
 					I ♥
 				</Heading>
 				<Paragraph>
-					Art, Music, Drawing, Video Games, Machine Learning, Photography
+					Art, Music, Fantasy Books, Workout, Technologies in general
 				</Paragraph>
 			</Section>
 			<Section delay={0.3}>
@@ -125,7 +121,18 @@ const Page = () => {
 							colorScheme="teal"
 							leftIcon ={<Icon as={FaInstagram} />}
 							>
-								@ikayoui
+								@kaiocalas
+							</Button>
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link href="https://www.linkedin.com/in/kaio-cal%C3%A1s-a7ba56207/" target="_blank">
+							<Button 
+							variant="ghost"
+							colorScheme="teal"
+							leftIcon ={<Icon as={FaLinkedin} />}
+							>
+								@Kaio Calas
 							</Button>
 						</Link>
 					</ListItem>

@@ -9,6 +9,7 @@ import thumbKC from '../public/images/works/ecomerce.png'
 import thumbBAT from '../public/images/works/movie1.png'
 import thumbCaverna from '../public/images/works/batcaverna.png'
 import thumbMusic from '../public/images/works/player-music1.png'
+import thumbCalasTech from '../public/images/works/calastech1.png'
 
 
 
@@ -68,6 +69,15 @@ const Works = () => {
                             A spotify player clone.
                         </WorkGridItem>
                     </Section>
+                    <Section delay={0.2}>
+                        <WorkGridItem
+                        id="calas-tech"
+                        title="Calas Tech"
+                        thumbnail={thumbCalasTech}
+                        >
+                            An E-commerce to sell Notebooks with a shopping cart and using Local Storage.
+                        </WorkGridItem>
+                    </Section>
                 </SimpleGrid>
 
                 <Section delay={0.2}>
@@ -78,7 +88,7 @@ const Works = () => {
                     </Heading>
                 </Section>
 
-                <SimpleGrid columns={1, 1, 2} gap={6}>
+                <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section delay={0.3}>
                         <WorkGridItem 
                         id="batcaverna"
