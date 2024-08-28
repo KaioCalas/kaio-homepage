@@ -58,7 +58,7 @@ const Page = () => {
 			<Heading as="h3" variant="section-title">
 				Work
 			</Heading>
-			<Paragraph>Kaio is a young man who lives in Brazil with a great passion for web development. He is always trying to learn new skills and put into practice what he has learned. When he&apos;s not online, Kaio enjoys going to the gym, reading fantasy books, and watching movies.
+			<Paragraph>Kaio is an IT apprentice, focused on developing systems, forms, and dashboards to improve the experience of patients and doctors at Real Hospital Português. His work aims to enhance efficiency and user satisfaction within the hospital.
 				</Paragraph>
 				<Box align="center" my={4}>
 					<NextLink href="/works">
@@ -81,8 +81,8 @@ const Page = () => {
 					Completed Computer technician course in the Technical school Grau Técnico.
 				</BioSection>
 				<BioSection>
-					<BioYear>2023 to present</BioYear>
-					Currently studying Web Development on the Udemy Plataform.
+					<BioYear>2024 to present</BioYear>
+					Currently studying System Analysis and Development on the Estácio.
 				</BioSection>
 				<BioSection>
 					<BioYear>2023 to present</BioYear>
@@ -95,7 +95,7 @@ const Page = () => {
 					I ♥
 				</Heading>
 				<Paragraph>
-					Art, Music, Fantasy Books, Workout, Technologies in general
+					Art, Music, Classic Literature, Workout, Technologies in general
 				</Paragraph>
 			</Section>
 			<Section delay={0.3}>
