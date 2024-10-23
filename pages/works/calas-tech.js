@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, Flex} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta} from '../../components/work'
 import P from '../../components/paragraph'
@@ -26,12 +26,12 @@ const Work = () => {
                         <span>HTML, TailWindCss and Javascript</span>
                     </ListItem>
                 </List>
-
-                <WorkImage src="/images/works/calastech1.png" alt="Calas Tech" />
-                <WorkImage src="/images/works/calastech2.png" alt="Calas Tech" />
-                <WorkImage src="/images/works/calastech3.png" alt="Calas Tech" />
-                <WorkImage src="/images/works/calastech4.png" alt="Calas Tech" />
-
+                <Flex justify="center" wrap="wrap" mt={4}>
+                    <WorkImage src="/images/works/calastech1.png" alt="Calas Tech" />
+                    <WorkImage src="/images/works/calastech2.png" alt="Calas Tech" />
+                    <WorkImage src="/images/works/calastech3.png" alt="Calas Tech" />
+                    <WorkImage src="/images/works/calastech4.png" alt="Calas Tech" />
+                </Flex>
 
 
             </Container>

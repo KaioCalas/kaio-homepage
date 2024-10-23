@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, Flex} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta} from '../../components/work'
 import P from '../../components/paragraph'
@@ -27,11 +27,13 @@ const Work = () => {
                     </ListItem>
                 </List>
 
-                <WorkImage src="/images/works/kcstore1.png" alt="KC Store" />
-                <WorkImage src="/images/works/kcstore2.png" alt="KC Store" />
-                <WorkImage src="/images/works/kcstore3.png" alt="KC Store" />
-                <WorkImage src="/images/works/kcstore4.png" alt="KC Store" />
-
+                
+                <Flex justify="center" wrap="wrap" mt={4}>
+                    <WorkImage src="/images/works/kcstore1.png" alt="KC Store" />
+                    <WorkImage src="/images/works/kcstore2.png" alt="KC Store" />
+                    <WorkImage src="/images/works/kcstore3.png" alt="KC Store" />
+                    <WorkImage src="/images/works/kcstore4.png" alt="KC Store" />
+                </Flex>
 
             </Container>
         </Layout>

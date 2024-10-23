@@ -4,7 +4,7 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
 import thumbCoffe from '../public/images/works/coffe.png'
-import thumbAnna from '../public/images/works/ana.png'
+import thumbPharma from '../public/images/works/pharmaplus/thumb.png'
 import thumbKC from '../public/images/works/ecomerce.png'
 import thumbBAT from '../public/images/works/movie1.png'
 import thumbCaverna from '../public/images/works/batcaverna.png'
@@ -35,11 +35,11 @@ const Works = () => {
                     </Section>
                     <Section delay={0.1}>
                         <WorkGridItem 
-                        id="ana" 
-                        title="Portfolio Anna" 
-                        thumbnail={thumbAnna}
+                        id="pharmaplus" 
+                        title="Pharma +" 
+                        thumbnail={thumbPharma}
                         >
-                            A portfolio to a model named Anna
+                            An application to manage medications for a pharmacy.
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.1}>
