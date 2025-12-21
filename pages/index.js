@@ -17,7 +17,6 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
-	FaInstagram,
 	FaGithubAlt,
 	FaLinkedin
 } from 'react-icons/fa'
@@ -27,7 +26,7 @@ const Page = () => {
 		<Layout>
 		<Container>
 				<Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} align="center">
-			Hello, I &apos;m a front-end developer based in Brazil!	
+			Hello, I &apos;m a full-stack developer based in Brazil!	
 				</Box>
 
 			<Box display={{ md:'flex' }}>
@@ -35,7 +34,7 @@ const Page = () => {
 				<Heading as="h2" variant="page-title">
 					Kaio Calás
 				</Heading>
-					<p>Front-end Developer ( HTML / CSS / JavaScript)</p>
+					<p>Full-Stack Developer (React / Node / Docker)</p>
 			</Box>
 			<Box flexShrink={0} 
 			mt={{base: 4, md: 0}}
@@ -58,7 +57,7 @@ const Page = () => {
 			<Heading as="h3" variant="section-title">
 				Work
 			</Heading>
-			<Paragraph>Kaio is an IT apprentice, focused on developing systems, forms, and dashboards to improve the experience of patients and doctors at Real Hospital Português. His work aims to enhance efficiency and user satisfaction within the hospital.
+			<Paragraph>Kaio is a Development Analyst focused on building portals, dashboards, and forms aimed at improving the experience of patients and doctors at Real Hospital Português. He works with modern web technologies such as React and Node.js, developing scalable solutions and deploying applications using Docker. His work is driven by efficiency, performance, and user satisfaction within the hospital environment.
 				</Paragraph>
 				<Box align="center" my={4}>
 					<NextLink href="/works">
@@ -85,7 +84,11 @@ const Page = () => {
 					Currently studying System Analysis and Development on the Estácio.
 				</BioSection>
 				<BioSection>
-					<BioYear>2023 to present</BioYear>
+					<BioYear>2025 to present</BioYear>
+					Currently working as a Development Analyst at Tascom Saúde, developing portals, dashboards, and forms using React and Node.js, and deploying applications with Docker.
+				</BioSection>
+				<BioSection>
+					<BioYear>2023 to 2025</BioYear>
 					Currently working as an Office Assistant at the Real Hospital Português.
 				</BioSection>
 			</Section>
@@ -111,17 +114,6 @@ const Page = () => {
 							leftIcon ={<Icon as={FaGithubAlt} />}
 							>
 								@KaioCalas
-							</Button>
-						</Link>
-					</ListItem>
-					<ListItem>
-						<Link href="https://www.instagram.com/ikayoui/" target="_blank">
-							<Button 
-							variant="ghost"
-							colorScheme="teal"
-							leftIcon ={<Icon as={FaInstagram} />}
-							>
-								@kaiocalas
 							</Button>
 						</Link>
 					</ListItem>
