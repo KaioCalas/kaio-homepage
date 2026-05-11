@@ -10,6 +10,7 @@ import thumbBAT from '../public/images/works/movie1.png'
 import thumbCaverna from '../public/images/works/batcaverna.png'
 import thumbMusic from '../public/images/works/player-music1.png'
 import thumbCalasTech from '../public/images/works/calastech1.png'
+import thumbAna from '../public/images/works/ana.png'
 
 
 
@@ -25,39 +26,43 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem 
-                        id="coffe" 
-                        title="Coffe Website" 
-                        thumbnail={thumbCoffe}
-                        >
-                            A responsive website to sell coffe.
-                        </WorkGridItem>
-                    </Section>
-                    <Section delay={0.1}>
-                        <WorkGridItem 
-                        id="pharmaplus" 
-                        title="Pharma +" 
+                        <WorkGridItem
+                        id="pharmaplus"
+                        title="Pharma +"
                         thumbnail={thumbPharma}
+                        tags={['React Native', 'Node.js', 'Docker', 'MySQL', 'Expo']}
                         >
                             An application to manage medications for a pharmacy.
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.1}>
-                        <WorkGridItem 
-                        id="ecomerce" 
-                        title="KC Store" 
-                        thumbnail={thumbKC}
+                        <WorkGridItem
+                        id="calas-tech"
+                        title="Calas Tech"
+                        thumbnail={thumbCalasTech}
+                        tags={['TailwindCSS', 'JavaScript', 'LocalStorage']}
                         >
-                            A website to sell consoles and games.
+                            An e-commerce to sell notebooks with a shopping cart using Local Storage.
+                        </WorkGridItem>
+                    </Section>
+                    <Section delay={0.1}>
+                        <WorkGridItem
+                        id="coffe"
+                        title="Coffe Website"
+                        thumbnail={thumbCoffe}
+                        tags={['HTML', 'CSS', 'JavaScript']}
+                        >
+                            A responsive website to sell coffee.
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.2}>
                         <WorkGridItem
-                        id="movie1" 
-                        title="Bat Filmes"
-                        thumbnail={thumbBAT}
+                        id="ecomerce"
+                        title="KC Store"
+                        thumbnail={thumbKC}
+                        tags={['HTML', 'CSS', 'JavaScript']}
                         >
-                            A website to watch movies of heroes.
+                            A website to sell consoles and games.
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.2}>
@@ -65,17 +70,19 @@ const Works = () => {
                         id="player-music"
                         title="Player Music"
                         thumbnail={thumbMusic}
+                        tags={['HTML', 'CSS', 'JavaScript']}
                         >
-                            A spotify player clone.
+                            A Spotify-inspired music player clone.
                         </WorkGridItem>
                     </Section>
                     <Section delay={0.2}>
                         <WorkGridItem
-                        id="calas-tech"
-                        title="Calas Tech"
-                        thumbnail={thumbCalasTech}
+                        id="movie1"
+                        title="Bat Filmes"
+                        thumbnail={thumbBAT}
+                        tags={['HTML', 'CSS', 'JavaScript', 'jQuery']}
                         >
-                            An E-commerce to sell Notebooks with a shopping cart and using Local Storage.
+                            A responsive website to watch hero movies.
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
@@ -90,12 +97,23 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section delay={0.3}>
-                        <WorkGridItem 
+                        <WorkGridItem
                         id="batcaverna"
                         title="Bat Caverna Filmes"
                         thumbnail={thumbCaverna}
+                        tags={['HTML', 'CSS', 'JavaScript', 'jQuery']}
                         >
-                            A responsive website to watch movies of heroes with login and registration system.
+                            A responsive website to watch hero movies with login and registration.
+                        </WorkGridItem>
+                    </Section>
+                    <Section delay={0.3}>
+                        <WorkGridItem
+                        id="ana"
+                        title="Anna Website"
+                        thumbnail={thumbAna}
+                        tags={['HTML', 'CSS']}
+                        >
+                            A portfolio website built for a model.
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>

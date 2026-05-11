@@ -23,7 +23,7 @@ const Layout = ({ children, title}) => (
         <Head>
             <title>{title} - Kaio Calás</title>
             <meta name="twitter:title" content={title} />
-            <meta property="og.title" content={title} />
+            <meta property="og:title" content={title} />
         </Head>
     )}
     {children}

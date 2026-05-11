@@ -31,7 +31,7 @@ const Work = () => {
                     <WorkImage src="/images/works/bat3.png" alt="BatCaverna" />
                     <WorkImage src="/images/works/bat4.png" alt="BatCaverna" />
                     <WorkImage src="/images/works/bat5.png" alt="BatCaverna" />
-                    <WorkImage src="/images/works/bat5.png" alt="BatCaverna" />
+                    <WorkImage src="/images/works/bat6.png" alt="BatCaverna" />
                 </Flex>
 
 

@@ -12,7 +12,7 @@ const Work = () => {
                     Player Music <Badge>2021</Badge>
                 </Title>
                 <P>
-                    A  responsive website to watch movies of heroes.
+                    A Spotify-inspired music player clone built with HTML, CSS, and JavaScript.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>

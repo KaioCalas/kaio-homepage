@@ -1,40 +1,65 @@
 import NextLink from 'next/link'
-import { 
-	Container, 
-	Box, 
-	Heading, 
-	Image, 
+import {
+	Container,
+	Box,
+	Heading,
+	Image,
 	List,
 	ListItem,
 	Link,
 	Button,
 	Icon,
-    useColorModeValue,
+	Wrap,
+	Tag,
+	useColorModeValue,
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, DownloadIcon, EmailIcon } from '@chakra-ui/icons'
 import {
 	FaGithubAlt,
 	FaLinkedin
 } from 'react-icons/fa'
 
+const techStack = [
+	'React',
+	'Node.js',
+	'Docker',
+	'TypeScript',
+	'React Native',
+	'Express',
+	'MySQL',
+	'TailwindCSS',
+	'Git',
+	'Linux',
+]
+
 const Page = () => {
 	return (
 		<Layout>
 		<Container>
-				<Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} align="center">
-			Hello, I &apos;m a full-stack developer based in Brazil!	
-				</Box>
+				<Box
+				borderRadius="lg"
+				bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+				border="1px solid"
+				borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
+				mb={6}
+				p={3}
+				align="center"
+				fontSize="sm"
+				letterSpacing="wide"
+			>
+				Hello, I&apos;m a full-stack developer based in Brazil!
+			</Box>
 
 			<Box display={{ md:'flex' }}>
 			<Box flexGrow={1}>
 				<Heading as="h2" variant="page-title">
 					Kaio Calás
 				</Heading>
-					<p>Full-Stack Developer (React / Node / Docker)</p>
+					<p style={{ opacity: 0.75, fontSize: '0.95em' }}>Junior Developer · React · Node.js · Docker</p>
 			</Box>
 			<Box flexShrink={0} 
 			mt={{base: 4, md: 0}}
@@ -57,16 +82,35 @@ const Page = () => {
 			<Heading as="h3" variant="section-title">
 				Work
 			</Heading>
-			<Paragraph>Kaio is a Development Analyst focused on building portals, dashboards, and forms aimed at improving the experience of patients and doctors at Real Hospital Português. He works with modern web technologies such as React and Node.js, developing scalable solutions and deploying applications using Docker. His work is driven by efficiency, performance, and user satisfaction within the hospital environment.
+			<Paragraph>Kaio is a Junior Developer at Duo Technology, building modern web applications with React and Node.js. He has experience developing portals, dashboards, and forms in the healthcare sector, deploying scalable solutions with Docker. His work is driven by efficiency, clean code, and delivering great user experiences.
 				</Paragraph>
-				<Box align="center" my={4}>
+				<Box align="center" my={4} display="flex" gap={3} justifyContent="center" flexWrap="wrap">
 					<NextLink href="/works">
 						<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
 							My portfolio
 						</Button>
 					</NextLink>
+					<Link href="/kaio-calas-cv.pdf" download>
+						<Button rightIcon={<DownloadIcon />} variant="outline" colorScheme="teal">
+							Download CV
+						</Button>
+					</Link>
 				</Box>
 		</Section>
+
+			<Section delay={0.15}>
+				<Heading as="h3" variant="section-title">
+					Tech Stack
+				</Heading>
+				<Wrap spacing={2} mt={2}>
+					{techStack.map(tech => (
+						<Tag key={tech} colorScheme="teal" variant="subtle" size="md">
+							{tech}
+						</Tag>
+					))}
+				</Wrap>
+			</Section>
+
 			<Section delay={0.2}>
 				<Heading as="h3" variant="section-title" >
 					Bio 
@@ -77,19 +121,23 @@ const Page = () => {
 				</BioSection>
 				<BioSection>
 					<BioYear>2022</BioYear>
-					Completed Computer technician course in the Technical school Grau Técnico.
-				</BioSection>
-				<BioSection>
-					<BioYear>2024 to present</BioYear>
-					Currently studying System Analysis and Development on the Estácio.
-				</BioSection>
-				<BioSection>
-					<BioYear>2025 to present</BioYear>
-					Currently working as a Development Analyst at Tascom Saúde, developing portals, dashboards, and forms using React and Node.js, and deploying applications with Docker.
+					Completed Computer technician course at Grau Técnico.
 				</BioSection>
 				<BioSection>
 					<BioYear>2023 to 2025</BioYear>
-					Currently working as an Office Assistant at the Real Hospital Português.
+					Worked as an Office Assistant at Real Hospital Português.
+				</BioSection>
+				<BioSection>
+					<BioYear>2024 to present</BioYear>
+					Currently studying System Analysis and Development at Estácio.
+				</BioSection>
+				<BioSection>
+					<BioYear>2025 to 2026</BioYear>
+					Worked as a Development Analyst at Tascom Saúde, developing portals, dashboards, and forms using React and Node.js, deploying applications with Docker.
+				</BioSection>
+				<BioSection>
+					<BioYear>2026 to present</BioYear>
+					Working as a Junior Developer at Duo Technology.
 				</BioSection>
 			</Section>
 
@@ -129,6 +177,22 @@ const Page = () => {
 						</Link>
 					</ListItem>
 				</List>
+			</Section>
+
+			<Section delay={0.4}>
+				<Heading as="h3" variant="section-title">
+					Contact
+				</Heading>
+				<Paragraph>
+					Open to full-stack and front-end opportunities. Feel free to reach out.
+				</Paragraph>
+				<Box align="center" my={4}>
+					<Link href="mailto:kaiomonteiro151@gmail.com">
+						<Button leftIcon={<EmailIcon />} colorScheme="teal">
+							Send me an email
+						</Button>
+					</Link>
+				</Box>
 			</Section>
 		</Container>
 	</Layout>
